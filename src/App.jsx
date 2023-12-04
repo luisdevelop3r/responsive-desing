@@ -1,3 +1,4 @@
+import Card from './Card'
 import logo from './assets/img/logo.svg'
 
 function App() {
@@ -59,15 +60,11 @@ function App() {
             <h2>Creamos un producto sin comparación.</h2>
             <p>Confiable y diseñado para su uso diario.</p>
           </div>
-          <section className="product-cards--container">
-            <article className="product-detail--card">
-              <span className="clock"></span>
-              <p className="product--card-title">Tiempo real</p>
-              <p className="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-            </article>
-          </section>
+          <Card></Card>
         </section>
-        <section></section>
+        <section className="bitcoin-img-container">
+          <h2>Conócelo hoy</h2>
+        </section>
         <section></section>
       </main>
       <footer></footer>

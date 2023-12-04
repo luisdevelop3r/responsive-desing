@@ -12,8 +12,8 @@ Orden de creacionde de los estilos
   --soft-orange: #FFE9D5;
   --secondary-blue: #1A9AF7;
   --soft-blue: #E7F5FF;
-  --warm-black:#201E1C;
-  --black: #282623;
+  --warm-black:#282623;
+  --black: #201E1C;
   --grey: #bababa;
   --off-white: #FAF8F7;
   --just-white: #FFF;
@@ -102,6 +102,7 @@ main {
 /*Estilos del exchange container / img / title / p*/
 .main-exchange-container{
   width: 100%;
+  min-width: 320px;
   height: auto;
   padding-top: 80px;
   padding-bottom: 30px;
@@ -237,4 +238,112 @@ main {
 }
 .blueDate{
   background-color: var(--soft-blue);
+}
+/*Secion de beneficios estilos /Container/Logo/title/p*/
+.main-product-detail{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 30px 10px;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-detail--batata-logo{
+  position: absolute;
+  width: 40px;
+  height: 24px;
+  top: -10px;
+  left: calc(50% - 20px);
+  background-image: url("./assets/icons/batata.svg");
+}
+.product-detail--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.product-detail--title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+.product-detail--title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+/*Secion de beneficios estilos / Cards*/
+.product-detail--card{
+  width: 100%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--warm-black);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail--card span{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*Secion de beneficios estilos / icons*/
+.clock{
+  background-image: url("./assets/icons/clock.svg");
+}
+.eye{
+  background-image: url("./assets/icons/eye.svg");
+}
+.dollar-sign{
+  background-image: url("./assets/icons/dollar-sign.svg");
+}
+.check-circle{
+  background-image: url("./assets/icons/check-circle.svg");
+}
+/*Secion de beneficios estilos / Title/text*/
+.product--card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+.product--card-body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+/*Secion de imagen / title*/
+.bitcoin-img-container{
+  text-align: center;
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url("./assets/img/bitcoinbaby2x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bitcoin-img-container{
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
 }

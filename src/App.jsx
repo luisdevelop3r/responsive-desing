@@ -1,5 +1,7 @@
 import Card from './Card'
+import PlanCard from './PlanCard'
 import logo from './assets/img/logo.svg'
+import logoFooter from './assets/img/logo-footer.svg'
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
         <div className="header--title-container">
           <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
           <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-          <a href="" className="header--button" target="_self">Conoce Nuestros Planes<span></span></a>
+          <a href="#1" className="header--button">Conoce Nuestros Planes<span></span></a>
         </div>
       </header>
       <main>
@@ -65,9 +67,28 @@ function App() {
         <section className="bitcoin-img-container">
           <h2>Conócelo hoy</h2>
         </section>
-        <section></section>
+        <section id="plans" className="main-plans-container">
+          <div className="plans--title">
+            <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+            <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+          </div>
+          <section className="plans-container--slider">
+            <PlanCard></PlanCard>
+          </section>
+        </section>
       </main>
-      <footer></footer>
+      <footer>
+        <section>
+          <ul>
+            <li id='1'><a href="#">Linkedin</a></li>
+            <li><a href="#">Crunchbase</a></li>
+            <li><a href="#">Hackernews</a></li>
+          </ul>
+        </section>
+        <section>
+          <img src={logoFooter} alt="Logo Batatabit" />
+        </section>
+      </footer>
     </>
   )
 }
